@@ -6,6 +6,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { UsersComponent } from './pages/users/users.component';
 import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
+import { UserbyadminComponent } from './pages/userbyadmin/userbyadmin.component';
 
 const routes: Routes = [
   {path: '', redirectTo:'home', pathMatch:'full'},
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path: 'about', component: AboutComponent},
   {path: 'contact', component: ContactComponent},
   {path: 'users', component: UsersComponent},
+  {path: 'userbyadmin', component: UserbyadminComponent},
   {path: 'login', component: LoginComponent},
   {path: 'signup', component: SignupComponent}
 ];

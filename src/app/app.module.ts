@@ -11,6 +11,11 @@ import { SignupComponent } from './pages/signup/signup.component';
 import { UsersComponent } from './pages/users/users.component';
 import { NavbarComponent } from './pages/navbar/navbar.component';
 import { ToastrModule} from 'ngx-toastr';
+import { HttpClientModule} from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ApiService } from './service/api.service';
+import { UserbyadminComponent } from './pages/userbyadmin/userbyadmin.component';
+
 
 
 @NgModule({
@@ -22,14 +27,18 @@ import { ToastrModule} from 'ngx-toastr';
     LoginComponent,
     SignupComponent,
     UsersComponent,
-    NavbarComponent
+    NavbarComponent,
+    UserbyadminComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
     ToastrModule.forRoot()
   ],
-  providers: [],
+  providers: [ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
