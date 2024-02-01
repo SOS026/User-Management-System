@@ -1,3 +1,29 @@
 {
-    "users":[]
+  "allusers": [
+    {
+      "id": 1,
+      "fullName": "Ela",
+      "userType": "User",
+      "email": "Ela@gmail.com",
+      "mobile": 1212121212,
+      "password": null,
+      "bio": "dc"
+    },
+    {
+      "id": -1,
+      "fullName": "Cubastion@Sourabh",
+      "userType": "Cubastion@Sourabh",
+      "email": "Cubastion@Sourabh",
+      "mobile": null,
+      "password": "wef",
+      "bio": "awfe"
+    },
+    {
+      "id": "a3b7",
+      "fullname": "Rahul",
+      "bio": "Hello, I am Rahul.",
+      "email": "rahul@gmail.com",
+      "password": "Rahul@123"
+    }
+  ]
 }

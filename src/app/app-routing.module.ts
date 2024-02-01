@@ -7,16 +7,18 @@ import { UsersComponent } from './pages/users/users.component';
 import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { UserbyadminComponent } from './pages/userbyadmin/userbyadmin.component';
+import { ErrorComponent } from './pages/error/error.component';
 
 const routes: Routes = [
-  {path: '', redirectTo:'home', pathMatch:'full'},
-  {path: 'home', component: HomeComponent},
-  {path: 'about', component: AboutComponent},
-  {path: 'contact', component: ContactComponent},
-  {path: 'users', component: UsersComponent},
-  {path: 'userbyadmin', component: UserbyadminComponent},
-  {path: 'login', component: LoginComponent},
-  {path: 'signup', component: SignupComponent}
+  {path: '', redirectTo:'home', pathMatch:'full', title: 'Home'},
+  {path: 'home', component: HomeComponent, title: 'Home'},
+  {path: 'about', component: AboutComponent, title: 'About'},
+  {path: 'contact', component: ContactComponent, title: 'Contant'},
+  {path: 'users', component: UsersComponent, title: 'Users'},
+  {path: 'userbyadmin', component: UserbyadminComponent, title: 'Users Added by Admin'},
+  {path: 'login', component: LoginComponent, title: 'Login'},
+  {path: 'signup', component: SignupComponent, title: 'SignUp'},
+  {path: '**', component: ErrorComponent, title: 'Error'}
 ];
 
 @NgModule({

@@ -1,1 +1,15 @@
-<p>users works!</p>
+<div>
+    <app-search (searchTextChanged)="onSearchTextEntered($event)" ></app-search>
+</div>
+    <div class="user-list">
+        <div class="BL" appOhover><h2>User List</h2></div>
+        <div *ngFor="let item of users" appHover>
+            <div *ngIf="searchText==='' || item.fullName.toLowerCase().includes(searchText) ">
+              <h3> Name: {{ item.fullName | custompipe}}</h3>
+              <p> Email: {{ item.email }}</p>
+              <p>User Id: {{ item.id }}</p>
+              <p>{{ item.bio }}</p>
+              <hr>
+            </div>
+        </div>
+    </div>

@@ -10,12 +10,12 @@ import { ToastrService } from 'ngx-toastr';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
-  public signupForm: FormGroup;
+  signupForm !: FormGroup;
 
   constructor(private formBuilder: FormBuilder, private http: HttpClient, private router: Router, private toastr: ToastrService) { }
   ngOnInit(): void {
     this.signupForm = this.formBuilder.group({
-      id: ['', Validators.required],
+      // id: ['', Validators.required],
       // user_type: ['', Validators.required],
       fullname: ['', Validators.required],
       bio: ['', Validators.required],
@@ -25,7 +25,7 @@ export class SignupComponent implements OnInit {
   }
 
   signUp() {
-    this.http.post<any>("http://localhost:3000/users", this.signupForm.value)
+    this.http.post<any>("http://localhost:3000/allusers", this.signupForm.value)
       .subscribe(res => {
         this.toastr.info("Signup Successfull")
         this.signupForm.reset();

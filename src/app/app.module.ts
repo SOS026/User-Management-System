@@ -15,6 +15,11 @@ import { HttpClientModule} from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ApiService } from './service/api.service';
 import { UserbyadminComponent } from './pages/userbyadmin/userbyadmin.component';
+import { SearchComponent } from './pages/search/search.component';
+import { CustompipePipe } from './pages/custompipe.pipe';
+import { HoverDirective } from './pages/custom directive/hover.directive';
+import { OhoverDirective } from './pages/custom directive/ohover.directive';
+import { ErrorComponent } from './pages/error/error.component';
 
 
 
@@ -28,7 +33,12 @@ import { UserbyadminComponent } from './pages/userbyadmin/userbyadmin.component'
     SignupComponent,
     UsersComponent,
     NavbarComponent,
-    UserbyadminComponent
+    UserbyadminComponent,
+    SearchComponent,
+    CustompipePipe,
+    HoverDirective,
+    OhoverDirective,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
