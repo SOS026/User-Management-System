@@ -9,14 +9,23 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class AuthGuard implements CanActivate {
 
-
   constructor(private router: Router,private service:ApiService, private toastr:ToastrService) { }
+
+  // user: any;
+  
+  // //navigate the authenticated user to the login page on logout
+  // ngOnInit(): void {
+  //     this.user = this.service.userData;
+  // }
+  // isLoggedIn(){
+  //   return this.service.loggedIn;
+  // }
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): any {
     if (this.service.IsAuthenticated()){
       if (route.url.length>0){
         let menu=route.url[0].path
-        if(menu=='user'|| menu=='userbyadmin'){
+        if(menu=='userbyadmin'){
           if(this.service.getUserRole()==='Admin'){
             return true
           }
@@ -33,6 +42,10 @@ export class AuthGuard implements CanActivate {
         return false
       }
   
+    }
+    else {
+      this.router.navigate(['/login'])
+      return false;
     }
   }
 }

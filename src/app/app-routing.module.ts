@@ -11,7 +11,7 @@ import { ErrorComponent } from './pages/error/error.component';
 import { AuthGuard } from './pages/guards/auth.guard';
 
 const routes: Routes = [
-  {path: '', redirectTo:'home', pathMatch:'full', title: 'Home'},
+  {path: '', redirectTo:'login', pathMatch:'full', title: 'Login'},
   {path: 'home', component: HomeComponent, title: 'Home'},
   {path: 'about', component: AboutComponent, title: 'About'},
   {path: 'contact', component: ContactComponent, title: 'Contant'},

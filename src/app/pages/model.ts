@@ -1,9 +1,9 @@
 export class UserModel{
     id : number;
     fullName : string = '';
-    userType : string = '';
+    user_type : string = '';
     email : string = '';
-    mobile : string = '';
+    // mobile : string = '';
     password:string='';
     bio: string ='';
 }

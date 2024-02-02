@@ -1,40 +1,20 @@
 {
   "allusers": [
     {
-      "id": 1,
-      "fullName": "Ela",
-      "userType": "User",
-      "email": "Ela@gmail.com",
-      "mobile": 1212121212,
-      "password": null,
-      "bio": "dc"
+      "id": "1611",
+      "user_type": "Admin",
+      "fullName": "Soni@123",
+      "bio": "Soni@123",
+      "email": "Soni@123",
+      "password": "Soni@123"
     },
     {
-      "id": -1,
-      "fullName": "Cubastion@Sourabh",
-      "userType": "Cubastion@Sourabh",
-      "email": "Cubastion@Sourabh",
-      "mobile": null,
-      "password": "wef",
-      "bio": "awfe"
-    },
-    {
-      "id": "1v2f",
-      "fullName": "Sourabh S",
-      "userType": "Admin",
-      "email": "sourabh@admin.com",
-      "mobile": 9983897907,
-      "password": "Sourabh@123",
-      "bio": "Hello, I am admin."
-    },
-    {
-      "id": "3",
-      "fullName": "Deepali",
-      "userType": "User",
-      "email": "deepalijangid@gmail.com",
-      "mobile": 8949255030,
-      "password": "Deepali@123",
-      "bio": "I am Deepali"
+      "id": "249b",
+      "user_type": "Admin",
+      "fullName": "Sourabh Soni",
+      "bio": "Sourabh this side.",
+      "email": "sourabh@gmail.com",
+      "password": "Sourabh@123"
     }
   ]
 }

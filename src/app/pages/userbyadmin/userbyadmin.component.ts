@@ -21,12 +21,12 @@ export class UserbyadminComponent implements OnInit {
   
   ngOnInit(): void {
     this.formValue = this.formbuilder.group({
-      id: ['', Validators.required],
+      // id: ['', Validators.required],
       fullName : ['', Validators.required],
-      userType : ['', Validators.required],
+      user_type : ['', Validators.required],
       email : ['', Validators.required],
       password : ['', Validators.required],
-      mobile : ['', Validators.required],
+      // mobile : ['', Validators.required],
       bio : ['', Validators.required]
     })
     this.getAllUser();
@@ -41,10 +41,10 @@ export class UserbyadminComponent implements OnInit {
   postUserDetails(){
 
     this.userModelObj.fullName = this.formValue.value.fullName;
-    this.userModelObj.userType = this.formValue.value.userType;
+    this.userModelObj.user_type = this.formValue.value.user_type;
     this.userModelObj.email = this.formValue.value.email;
     this.userModelObj.password = this.formValue.value.password;
-    this.userModelObj.mobile = this.formValue.value.mobile;
+    // this.userModelObj.mobile = this.formValue.value.mobile;
     this.userModelObj.bio = this.formValue.value.bio;
   
     this.userModelObj.id = this.formValue.value.id;
@@ -85,18 +85,18 @@ export class UserbyadminComponent implements OnInit {
     this.userModelObj.id = row.id;
     console.log(row.id)
     this.formValue.controls['fullName'].setValue(row.fullName);
-    this.formValue.controls['userType'].setValue(row.userType);
+    this.formValue.controls['user_type'].setValue(row.user_type);
     this.formValue.controls['email'].setValue(row.email);
     this.formValue.controls['password'].setValue(row.password);
-    this.formValue.controls['mobile'].setValue(row.mobile);
+    // this.formValue.controls['mobile'].setValue(row.mobile);
     this.formValue.controls['bio'].setValue(row.bio);
   }
   updateUserDetails(){
     this.userModelObj.fullName = this.formValue.value.fullName;
-    this.userModelObj.userType = this.formValue.value.userType;
+    this.userModelObj.user_type = this.formValue.value.user_type;
     this.userModelObj.email = this.formValue.value.email;
     this.userModelObj.password = this.formValue.value.password;
-    this.userModelObj.mobile = this.formValue.value.mobile;
+    // this.userModelObj.mobile = this.formValue.value.mobile;
     this.userModelObj.bio = this.formValue.value.bio;
 
     this.api.updateUser(this.userModelObj,this.userModelObj.id)
