@@ -8,6 +8,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { UserbyadminComponent } from './pages/userbyadmin/userbyadmin.component';
 import { ErrorComponent } from './pages/error/error.component';
+import { AuthGuard } from './pages/guards/auth.guard';
 
 const routes: Routes = [
   {path: '', redirectTo:'home', pathMatch:'full', title: 'Home'},
@@ -15,7 +16,7 @@ const routes: Routes = [
   {path: 'about', component: AboutComponent, title: 'About'},
   {path: 'contact', component: ContactComponent, title: 'Contant'},
   {path: 'users', component: UsersComponent, title: 'Users'},
-  {path: 'userbyadmin', component: UserbyadminComponent, title: 'Users Added by Admin'},
+  {path: 'userbyadmin', component: UserbyadminComponent, title: 'Users Added by Admin', canActivate:[AuthGuard]},
   {path: 'login', component: LoginComponent, title: 'Login'},
   {path: 'signup', component: SignupComponent, title: 'SignUp'},
   {path: '**', component: ErrorComponent, title: 'Error'}

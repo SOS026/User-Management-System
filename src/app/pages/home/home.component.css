@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://thumbs.dreamstime.com/z/enterprise-resource-planning-erp-corporate-company-management-business-internet-technology-concept-101526774.jpg'); /* Adjust the path accordingly */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }  
+  .container {
+    max-width: 800px; /* Adjust the maximum width of the container */
+    margin: 0 auto;
+  }
+  
+  .jumbotron {
+    background-color: #ffffff; /* Set the background color for the jumbotron */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  }
+  
+  .display-4 {
+    color: #007bff; /* Set the color for the heading */
+  }
+  
+  .lead {
+    color: #6c757d; /* Set the color for the lead text */
+  }
+  
+  hr {
+    border-color: #007bff; /* Set the color for the horizontal rule */
+  }
+  
+  ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px; /* Add some spacing between list items */
+  }
+  
+  .btn-primary {
+    background-color: #007bff; /* Set the background color for the primary button */
+    border-color: #007bff; /* Set the border color for the primary button */
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3; /* Set the background color on hover */
+    border-color: #0056b3; /* Set the border color on hover */
+  }
+  

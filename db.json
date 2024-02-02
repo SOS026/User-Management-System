@@ -19,11 +19,22 @@
       "bio": "awfe"
     },
     {
-      "id": "a3b7",
-      "fullname": "Rahul",
-      "bio": "Hello, I am Rahul.",
-      "email": "rahul@gmail.com",
-      "password": "Rahul@123"
+      "id": "1v2f",
+      "fullName": "Sourabh S",
+      "userType": "Admin",
+      "email": "sourabh@admin.com",
+      "mobile": 9983897907,
+      "password": "Sourabh@123",
+      "bio": "Hello, I am admin."
+    },
+    {
+      "id": "3",
+      "fullName": "Deepali",
+      "userType": "User",
+      "email": "deepalijangid@gmail.com",
+      "mobile": 8949255030,
+      "password": "Deepali@123",
+      "bio": "I am Deepali"
     }
   ]
 }

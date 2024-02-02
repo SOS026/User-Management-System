@@ -51,16 +51,21 @@ export class ApiService {
   // Method to set login status to true
   Login() {
     this.loggedIn = true;
+    alert('You have logged in')
+
   }
 
   // Method to set login status to false
-  Logout() {
+   Logout() {
     this.loggedIn = false;
+    alert('You have logged out')
+
   }
 
   // Method to check if the user is authenticated
   IsAuthenticated() {
     return this.loggedIn;
+    
   }
   getUserRole(){
     return sessionStorage.getItem('role')!=null?sessionStorage.getItem('role')?.toString():''

@@ -40,7 +40,6 @@ export class UserbyadminComponent implements OnInit {
 
   postUserDetails(){
 
-
     this.userModelObj.fullName = this.formValue.value.fullName;
     this.userModelObj.userType = this.formValue.value.userType;
     this.userModelObj.email = this.formValue.value.email;
